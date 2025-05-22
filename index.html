@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Portfolio</title>
+
+    <!-- Font dan Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+
+    <!-- JavaScript -->
+    <script defer src="js/main.js"></script>
+    <script defer src="js/chatbot.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <a href="#" class="logo">
+                <h1 class="logo">Mang <span class="warna-logo">-Dev</span><span class="warna-angka">8</span></h1>
+            </a>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <button class="close-btn" onclick="toggleMenu()">&times;</button>
+        </div>
+        <ul class="menu">
+            <li><a href="#" class="active"><i class="fas fa-home"></i> Beranda</a></li>
+            <li><a href="tentang saya.html"><i class="fas fa-user"></i> Tentang Saya</a></li>
+            <li class="dropdown">
+                <a href="#" onclick="toggleDropdown(event)">
+                    <i class="fas fa-book-open"></i> Program <i class="fas fa-chevron-down"></i>
+                </a>
+                <ul class="submenu">
+                    <li><a href="#"><i class="fas fa-laptop-code"></i> gak ada</a></li>
+                    <li><a href="#"><i class="fas fa-chalkboard-teacher"></i> masih kosong</a></li>
+                    <li><a href="#"><i class="fas fa-building"></i> sory kosong</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fas fa-users"></i> Komunitas</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> Kontak</a></li>
+        </ul>
+    </aside>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="video-wrapper">
+            <video autoplay muted loop playsinline>
+                <source src="Intro Bocchi the rock.mp4" type="video/mp4">
+                Browser kamu tidak mendukung video.
+            </video>
+            <div class="overlay"></div>
+            <div class="hero-text">
+                <i class="fas fa-motorcycle"></i> Santai Sambil Ngopi!
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Utama -->
+    <div class="menu-section">
+        <div class="menu-item">
+            <a href="fitur menu/blog.html">
+                <i class="fas fa-blog fa-2x"></i>
+                <p>Artikel & Blog</p>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="fitur menu/file.html">
+                <i class="fas fa-folder-open fa-2x"></i>
+                <p>File</p>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="fitur menu/file.html?filter=video">
+                <i class="fas fa-video fa-2x"></i>
+                <p>Video</p>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="fitur menu/file.html?filter=audio">
+                <i class="fas fa-music fa-2x"></i>
+                <p>Lagu</p>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="#projeck">
+                <i class="fas fa-tv fa-2x"></i>
+                <p>Projeck</p>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="premium.html">
+                <i class="fas fa-code fa-2x"></i>
+                <p>Skills</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- Konten Blog -->
+    <header>
+        <h1>Selamat Datang Di Web Kami.</h1>
+        <p>Ayo lihat Berbagi cerita dan informasi menarik setiap hari</p>
+    </header>
+
+    <h3 class="text-konten">Konten Blog</h3>
+    <p class="text-konten"> Lihat Blog lain nya juga ya dibagian Menu di atas.</p>
+
+    <main>
+        <article class="blog-post">
+            <img src="img artikel/resistor.jpg" alt="Resistor" class="thumb" />
+            <div class="post-content">
+                <h2>Apa Itu Resistor?</h2>
+                <p class="date">10 Mei 2025</p>
+                <p>Resistor adalah komponen elektronik yang berfungsi menghambat arus listrik. Sering digunakan untuk mengatur tegangan dan melindungi komponen lain dari kerusakan.</p>
+                <a href="/komponen/resistor.html" class="read-more">Baca Selengkapnya</a>
+            </div>
+        </article>
+
+        <article class="blog-post">
+            <img src="img artikel/capacitors.jpg" alt="Capacitor" class="thumb" />
+            <div class="post-content">
+                <h2>Apa Itu Kapasitor?</h2>
+                <p class="date">9 Mei 2025</p>
+                <p>Kapasitor menyimpan muatan listrik sementara dan biasa digunakan untuk menyaring sinyal atau menstabilkan tegangan dalam rangkaian elektronik.</p>
+                <a href="/komponen/kapasitor.html" class="read-more">Baca Selengkapnya</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>Scroll Ke bawah Untuk Lihat Apa yang ada di Web Ini.</p>
+    </footer>
+
+    <!-- Projeck Section -->
+    <header>
+        <h1>Projeck Yang Saya Kerjakan</h1>
+        <p>Yuk lihat projek apa aja yang saya kerjakan di halama ini ya.</p>
+    </header>
+
+    <h3 class="text-konten" id="projeck">Projeck Saya</h3>
+<main>
+            <article class="blog-post">
+            <img src="img artikel/capacitors.jpg" alt="Capacitor" class="thumb" />
+            <div class="post-content">
+                <h2>Apa Itu Kapasitor?</h2>
+                <p class="date">9 Mei 2025</p>
+                <p>Kapasitor menyimpan muatan listrik sementara dan biasa digunakan untuk menyaring sinyal atau menstabilkan tegangan dalam rangkaian elektronik.</p>
+                <a href="#" class="read-more">Baca Selengkapnya</a>
+            </div>
+        </article>
+</main>
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <div class="chat-header">
+            <img src="g1.png" alt="Avatar">
+            <div class="chat-title">
+                <h3>MangDev AI</h3>
+                <p>Asisten Interaktif</p>
+            </div>
+            <button class="close-chat"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <div class="chat-message bot">
+                <p>Halo! Ada yang bisa saya bantu?</p>
+            </div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="chat-input" placeholder="Tulis pesan...">
+            <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+        <div class="chat-links" id="chatLinks"></div>
+        <div id="chat-suggestions" class="chat-suggestions"></div>
+    </div>
+
+    <!-- Tombol Chatbot -->
+    <button class="chat-toggle" id="chat-toggle">
+        <i class="fas fa-comment-dots"></i>
+    </button>
+
+</body>
+</html>

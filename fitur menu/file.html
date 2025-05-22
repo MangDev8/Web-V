@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>File Center</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-TjUrxsVCut1vZyP8aOGcvV6xgDoUpFhA37LU+tq0PFnCPZIzq2OCPAvq5vwUdULABgkak+T+0LruyFqv6Tt+8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+ 
+</head>
+ <link rel="stylesheet" href="/css/file.css">
+<body>
+  <nav>
+    <ul>
+      <li onclick="filterFiles('all')"><i class="fas fa-list"></i> Semua</li>
+      <li onclick="filterFiles('doc')"><i class="fas fa-file-alt"></i> Dokumen</li>
+      <li onclick="filterFiles('zip')"><i class="fas fa-file-archive"></i> ZIP</li>
+      <li onclick="filterFiles('audio')"><i class="fas fa-music"></i> Lagu</li>
+      <li onclick="filterFiles('video')"><i class="fas fa-video"></i> Video</li>
+    </ul>
+  </nav>  <div class="container">
+    <div class="file-card doc">
+      <p><i class="fas fa-file-alt"></i> Dokumen Penting.pdf</p>
+      <button onclick="startDownload('files/dokumen.pdf')"><i class="fas fa-download"></i> Download</button>
+      <div class="progress-container"><div class="progress-bar"></div></div>
+    </div><div class="file-card zip">
+  <p><i class="fas fa-file-archive"></i> Project Lengkap.zip</p>
+  <button onclick="startDownload('files/projek.zip')"><i class="fas fa-download"></i> Download</button>
+  <div class="progress-container"><div class="progress-bar"></div></div>
+</div>
+
+<!-- menu lagu -->
+<div class="file-card audio">
+  <p><i class="fas fa-music"></i> suara mia ml bb</p>
+  <iframe src="https://drive.google.com/file/d/1VTq7dWD3pPhINHGEqfq0lgXFEqxT9NZ7/preview" width="100%" height="80" allow="autoplay"></iframe>
+</div>
+<button onclick="startDownload('https://drive.google.com/uc?export=download&id=1VTq7dWD3pPhINHGEqfq0lgXFEqxT9NZ7')">
+  <i class="fas fa-download"></i> Download
+</button>
+
+<!-- menu video -->
+
+<div class="file-card video">
+  <p><i class="fas fa-video"></i> yuru camp</p>
+  <iframe src="https://drive.google.com/file/d/1ZjxgTMdyoLA_M4T8uOW2dH7Ai6_3EL5g/preview" width="100%" height="300" allow="autoplay"></iframe>
+</div>
+
+  </div>
+  <script src="/js/file.js"></script>
+ </body>
+</html>
+
+

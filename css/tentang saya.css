@@ -1,0 +1,144 @@
+/* Container Utama */
+.container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Penuh layar */
+    width: 100%;
+    overflow: hidden; /* Mencegah overflow */
+}
+
+/* Card */
+.card {
+    background: white;
+    padding: 25px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Ikon */
+.icon {
+    font-size: 50px;
+    color: #0083b0;
+    margin-bottom: 15px;
+}
+
+/* Animasi Muncul */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .card {
+        width: 95%;
+        padding: 20px;
+    }
+}
+
+/* Bagian Tentang Saya */
+#about {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+#about h2 {
+    color: tomato;
+}
+
+/* Skill Icons */
+.skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.skill-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background: rgba(255, 245, 235, 0.5); /* Warna diperbaiki */
+    border-radius: 10px;
+    width: 100px;
+    transition: 0.3s;
+}
+
+.skill-icon i {
+    font-size: 40px;
+    color: #ffcc00;
+}
+
+.skill-icon p {
+    margin-top: 10px;
+}
+
+.skill-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Skill Progress */
+.skills {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+.skill {
+    margin: 15px 0;
+}
+
+.skill p {
+    margin: 5px 0;
+}
+
+.progress {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #ffcc00;
+}
+
+/* Bagian Lain */
+.lain-03 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+    color: tomato;
+}
+
+.skills-lain p {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+/* Layout Grid untuk Mobile */
+@media (max-width: 768px) {
+    .skills-icons {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 20px;
+    }
+}

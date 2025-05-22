@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resistor - Elektronika Dasar</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #f5f5f5;
+      line-height: 1.7;
+      padding: 20px;
+    }
+    header {
+      background: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #00bcd4;
+      border-radius: 10px;
+    }
+
+/* Wrapper Navbar */
+
+    nav .nav-links a {
+      color: #e0e0e0;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 1em;
+      transition: color 0.3s;
+    }
+    nav .nav-links a:hover {
+      color: #00bcd4;
+    }
+
+
+    h1 {
+      margin: 0;
+      font-size: 2em;
+      color: #00bcd4;
+    }
+    .content {
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #ffc107;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #333;
+    }
+    tr:nth-child(even) {
+      background-color: #1e1e1e;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+
+  <header>
+<nav class="nav-links">
+        <h1>Resistor</h1>
+      <a href="/index.html"><i class="fas fa-home"></i> Beranda</a>
+      <a href="/fitur menu/blog.html"><i class="fas fa-newspaper"></i> Artikel</a>
+</nav>
+  </header>
+
+  <div class="content">
+    <h2>Apa itu Resistor?</h2>
+    <p>Resistor adalah komponen elektronik pasif yang digunakan untuk mengatur atau membatasi arus listrik dalam sebuah rangkaian. Satuan dari resistor adalah Ohm (&Omega;). Resistor sangat umum digunakan dalam hampir semua perangkat elektronik.</p>
+
+    <h2>Fungsi Resistor</h2>
+    <ul>
+      <li>Membatasi arus listrik dalam rangkaian</li>
+      <li>Membagi tegangan (voltage divider)</li>
+      <li>Mengatur level sinyal</li>
+      <li>Melindungi komponen lain dari arus berlebih</li>
+      <li>Mengatur bias transistor</li>
+    </ul>
+
+    <h2>Jenis-Jenis Resistor</h2>
+    <ul>
+      <li><strong>Resistor Tetap (Fixed Resistor)</strong>: Nilai tahanannya tetap. Contoh: Carbon film, Metal film.</li>
+      <li><strong>Resistor Variabel (Variable Resistor)</strong>: Tahanan dapat diubah. Contoh: Potensiometer, Trimpot.</li>
+      <li><strong>Resistor Termistor</strong>: Tahanan berubah sesuai suhu. Terbagi menjadi NTC (Negatif) dan PTC (Positif).</li>
+      <li><strong>LDR (Light Dependent Resistor)</strong>: Tahanan berubah sesuai cahaya yang diterima.</li>
+    </ul>
+
+    <h2>Kode Warna Resistor</h2>
+    <p>Resistor biasanya memiliki pita warna untuk menunjukkan nilai tahanannya. Berikut ini adalah tabel kode warna resistor:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Warna</th>
+          <th>Digit</th>
+          <th>Pengali</th>
+          <th>Toleransi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Hitam</td><td>0</td><td>x1</td><td>-</td></tr>
+        <tr><td>Cokelat</td><td>1</td><td>x10</td><td>±1%</td></tr>
+        <tr><td>Merah</td><td>2</td><td>x100</td><td>±2%</td></tr>
+        <tr><td>Oranye</td><td>3</td><td>x1K</td><td>-</td></tr>
+        <tr><td>Kuning</td><td>4</td><td>x10K</td><td>-</td></tr>
+        <tr><td>Hijau</td><td>5</td><td>x100K</td><td>±0.5%</td></tr>
+        <tr><td>Biru</td><td>6</td><td>x1M</td><td>±0.25%</td></tr>
+        <tr><td>Ungu</td><td>7</td><td>x10M</td><td>±0.1%</td></tr>
+        <tr><td>Abu-abu</td><td>8</td><td>-</td><td>±0.05%</td></tr>
+        <tr><td>Putih</td><td>9</td><td>-</td><td>-</td></tr>
+        <tr><td>Emas</td><td>-</td><td>x0.1</td><td>±5%</td></tr>
+        <tr><td>Perak</td><td>-</td><td>x0.01</td><td>±10%</td></tr>
+        <tr><td>Tidak ada</td><td>-</td><td>-</td><td>±20%</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Cara Menghitung Nilai Resistor dari Warna</h2>
+    <p>
+      Gunakan 4 pita warna pada resistor:
+      <br><strong>Pita 1</strong>: digit pertama<br>
+      <strong>Pita 2</strong>: digit kedua<br>
+      <strong>Pita 3</strong>: pengali<br>
+      <strong>Pita 4</strong>: toleransi
+    </p>
+    <p>Contoh: Merah - Merah - Cokelat - Emas<br>
+      Merah (2), Merah (2), Cokelat (x10) = 22 × 10 = 220 Ohm, toleransi ±5%</p>
+  </div>
+</body>
+</html>

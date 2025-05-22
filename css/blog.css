@@ -1,0 +1,126 @@
+body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: #121212;
+      color: #e0e0e0;
+    }
+    nav {
+      background: #1e1e1e;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+      z-index: 999;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    nav .logo {
+      font-size: 1.5em;
+      color: #00bcd4;
+      font-weight: bold;
+    }
+    nav .nav-links a {
+      color: #e0e0e0;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 1em;
+      transition: color 0.3s;
+    }
+    nav .nav-links a:hover {
+      color: #00bcd4;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      margin-top: 80px;
+    }
+
+    .blog-post {
+      background: #1f1f1f;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .blog-post:hover {
+      transform: translateY(-5px);
+    }
+
+    .thumb {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .post-content {
+      padding: 20px;
+    }
+
+    .post-content h2 {
+      color: #00bcd4;
+      margin-bottom: 10px;
+    }
+
+    .date {
+      font-size: 0.9em;
+      color: #aaa;
+      margin-bottom: 10px;
+    }
+
+    .post-content p {
+      line-height: 1.6;
+    }
+
+    .read-more {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 15px;
+      padding: 8px 14px;
+      background-color: #00bcd4;
+      color: #121212;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .read-more i {
+      margin-left: 8px;
+    }
+
+    .read-more:hover {
+      background-color: #0192a2;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #888;
+      font-size: 0.9em;
+    }
+
+    @media screen and (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .nav-links {
+        margin-top: 10px;
+      }
+    }
+    
+    .tombol-lihat {
+  display:  inline-block;
+  margin-top: 0.3rem;
+  color: #3498db;
+  text-decoration: none;
+  justify-content: center;
+  
+}
